@@ -1,0 +1,24 @@
+# Fichiers temporaires Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter
+.ipynb_checkpoints
+
+# IDE
+.vscode/
+
+# Exclusions
+Data/*
+!Data/data.zip
+Models/checkpoints/*
+!Models/mnist_cnn.keras
+Processed_Data/
+RP/*
+!RP/RAPPORT.pdf
+ocrcnnmnist2venv/
+
+# Fichier à ignorer
+rqts1.txt
+

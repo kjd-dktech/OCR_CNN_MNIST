@@ -1,0 +1,19 @@
+{
+    "test_accuracy": 0.9949987530708313,
+    "test_loss": 0.014351632446050644,
+    "training_epochs": 30,
+    "best_validation_accuracy": 0.9968189001083374,
+    "best_validation_loss": 0.015385642647743225,
+    "timestamp": "2025-10-08 14:16:30",
+    "model_architecture": "CNN avec 3 couches convolutionnelles",
+    "parameters": {
+        "input_shape": [
+            28,
+            28,
+            1
+        ],
+        "num_classes": 10,
+        "optimizer": "Adam",
+        "learning_rate": 0.001
+    }
+}
