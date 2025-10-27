@@ -2,19 +2,21 @@
 
 ![status: work in progress](https://img.shields.io/badge/status-terminate-green)
 ![repo size](https://img.shields.io/github/repo-size/kjd-dktech/OCR_CNN_MNIST)
-<!--![release](https://img.shields.io/github/v/release/kjd-dktech/OCR_CNN_MNIST)-->
+![release  (latest by date)](https://img.shields.io/github/v/release/kjd-dktech/OCR_CNN_MNIST)
+![tag (latest by date)](https://img.shields.io/github/v/tag/kjd-dktech/OCR_CNN_MNIST)
 
 <!--![python](https://img.shields.io/badge/python-3.8%2B-blue)-->
 
-![PyPI - Version](https://img.shields.io/pypi/v/numpy)
-![Python Versions](https://img.shields.io/pypi/pyversions/requests)
+![pyPI - Version](https://img.shields.io/pypi/v/numpy)
+![python Versions](https://img.shields.io/pypi/pyversions/requests)
 ![tf](https://img.shields.io/badge/TensorFlow-2.2x-orange)
 
 ![stars](https://img.shields.io/github/stars/kjd-dktech/OCR_CNN_MNIST)
 ![forks](https://img.shields.io/github/forks/kjd-dktech/OCR_CNN_MNIST)
 
-![model size](https://img.shields.io/badge/model-20.9MB-lightgrey)
-[![dataset](https://img.shields.io/badge/dataset-available-green)](https://github.com/kjd-dktech/OCR_CNN_MNIST/raw/main/Data/data.zip)
+<!-- ![model size](https://img.shields.io/badge/model-20.9MB-lightgrey)-->
+[![model Size](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/kjd-dktech/OCR_CNN_MNIST/main/Models/model-size.json)](https://github.com/kjd-dktech/OCR_CNN_MNIST/tree/main/Models/)
+[![dataset](https://img.shields.io/badge/dataset-available-green)](https://github.com/kjd-dktech/OCR_CNN_MNIST/tree/main/Data/)
 
 ![build](https://img.shields.io/github/actions/workflow/status/kjd-dktech/OCR_CNN_MNIST/ci.yml?branch=main)
 ![tests](https://img.shields.io/github/workflow/status/kjd-dktech/OCR_CNN_MNIST/CI?label=tests)

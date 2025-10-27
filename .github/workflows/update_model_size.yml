@@ -1,0 +1,36 @@
+name: Update model size badge
+
+on:
+  push:
+    paths:
+      - "model.keras"  # Déclenche le workflow uniquement si le modèle change
+
+jobs:
+  update-badge:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1️⃣ Récupérer le dépôt
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2️⃣ Calculer la taille du modèle
+      - name: Get model size
+        id: model_size
+        run: |
+          size=$(du -h Models/mnist_cnn.keras | cut -f1)
+          echo "size=$size" >> $GITHUB_ENV
+
+      # 3️⃣ Créer le fichier JSON pour le badge Shields.io
+      - name: Create badge JSON
+        run: |
+          echo "{ \"schemaVersion\": 1, \"label\": \"model\", \"message\": \"${{ env.size }}\", \"color\": \"lightgrey\" }" > model-size.json
+
+      # 4️⃣ Commit & push automatique
+      - name: Commit updated badge data
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add model-size.json
+          git commit -m "update model size badge" || echo "No changes to commit"
+          git push
